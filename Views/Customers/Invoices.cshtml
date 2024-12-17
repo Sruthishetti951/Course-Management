@@ -1,0 +1,111 @@
+﻿@using ProblemAssignment3.Entities;
+@model ProblemAssignment3.Models.CustomerInvoicesModel
+
+@if (TempData["LastActionMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["LastActionMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="d-flex justify-content-evenly border border-dark p-3 m-3 gy-3">
+    <div>
+        <h4 class="mb-3">Invoice for @Model.Customer.Name</h4>
+        <div class="mb-4">
+            <div>Address: @Model.Customer.Address1, @Model.Customer.City,
+                @Model.Customer.ProvinceOrState,@Model.Customer.ZipOrPostalCode</div>
+        </div>
+        <div class="mb-3">
+            <div>Invoices</div>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Invoice #</th>
+                        <th>Due Date</th>
+                        <th>Amount paid</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Invoice inv in Model.Customer.Invoices)
+                    {
+                        <tr class="@(inv.InvoiceId == Model?.SelectedInvoice?.InvoiceId ? "table-success" : "" )">
+                            <td>
+<a asp-action="Invoices" asp-controller="Customers" asp-route-id=@Model.Customer.CustomerId asp-route-invoiceId=@inv.InvoiceId asp-route-group="@ViewBag.CurrentGroup"> @inv.InvoiceId</a>
+                                
+                            </td>
+                            <td>@inv.InvoiceDueDate</td>
+                            <td>@inv.PaymentTotal</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    <form asp-action="AddInvoice" asp-controller="Customers" method="post">
+    <input type="hidden" name="customerId" value="@Model.Customer.CustomerId" />
+    <input type="hidden" name="group" value="@ViewBag.CurrentGroup" />
+        
+        <div class="mb-2">
+            <label for="InvoiceDate" class="form-label">Date: </label>
+            <input type="date" name="invoiceDate" class="form-control"/>
+        </div>
+        <div class="mb-3">
+           <label for="PaymentTermsId" class="form-label">Terms</label>
+            <select name="paymentTermsId" class="form-control">
+                @foreach (PaymentTerms term in Model?.PaymentTerms)
+                {
+                    <option value="@term.PaymentTermsId">@term.Description</option>
+                }
+            </select>
+        </div>
+        <div>
+            <button class="btn btn-primary">Add Invoice</button>
+        </div> 
+    </form>  
+    </div>
+    <div>
+        <a class="mb-3" asp-route-group="@ViewBag.CurrentGroup" asp-action="Customers"
+asp-controller="Customers">Return to @ViewBag.CurrentGroup customers</a>
+        <div class="mb-4">Terms: @Model?.SelectedInvoice?.PaymentTerms.DueDays days</div>
+        <div>
+            <div>Line Items for invoice # @Model?.SelectedInvoice?.InvoiceId</div>
+            <table class="table table-bordered table-striped mb-3">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        @foreach (var line in Model?.LineItems)
+                        {
+                        <tr>
+                            <td>@line.Description</td>
+                            <td>@line.Amount</td>
+                        </tr>
+                        }
+                </tbody>
+            </table>
+        </div>
+        <div class="mb-2">Total:@Model?.SelectedInvoice?.InvoiceLineItems.Sum(li => li.Amount) </div>
+
+        <form asp-action="AddLineItem" asp-controller="Customers" method="post">
+        <input type="hidden" name="id" value="@Model.Customer.CustomerId" />
+        <input type="hidden" name="invoiceId" value="@Model?.SelectedInvoice?.InvoiceId" />
+        <div class="mb-2">
+            <label for="Description" class="form-label">Description: </label>
+            <input type="text" name="description" class="form-control"/>
+        </div>
+        <div class="mb-3">
+            <label for="Amount" class="form-label">Amount:</label>
+            <input type="number" step="0.01" name="amount" class="form-control" />
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Add Line Item</button>
+        </div>
+        </form>
+  
+    </div>
+</div>
+

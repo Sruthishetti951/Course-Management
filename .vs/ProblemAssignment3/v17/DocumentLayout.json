@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Subjects\\Sem 2\\Asp.net\\Assignments\\ProblemAssignment_3\\ProblemAssignment_3\\ProblemAssignment3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9A00B7B8-5875-4854-9356-83CA441735CF}|ProblemAssignment3.csproj|d:\\subjects\\sem 2\\asp.net\\assignments\\problemassignment_3\\problemassignment_3\\problemassignment3\\views\\customers\\invoices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A00B7B8-5875-4854-9356-83CA441735CF}|ProblemAssignment3.csproj|solutionrelative:views\\customers\\invoices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A00B7B8-5875-4854-9356-83CA441735CF}|ProblemAssignment3.csproj|d:\\subjects\\sem 2\\asp.net\\assignments\\problemassignment_3\\problemassignment_3\\problemassignment3\\views\\customers\\customerform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A00B7B8-5875-4854-9356-83CA441735CF}|ProblemAssignment3.csproj|solutionrelative:views\\customers\\customerform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A00B7B8-5875-4854-9356-83CA441735CF}|ProblemAssignment3.csproj|d:\\subjects\\sem 2\\asp.net\\assignments\\problemassignment_3\\problemassignment_3\\problemassignment3\\views\\customers\\addcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A00B7B8-5875-4854-9356-83CA441735CF}|ProblemAssignment3.csproj|solutionrelative:views\\customers\\addcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A00B7B8-5875-4854-9356-83CA441735CF}|ProblemAssignment3.csproj|d:\\subjects\\sem 2\\asp.net\\assignments\\problemassignment_3\\problemassignment_3\\problemassignment3\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A00B7B8-5875-4854-9356-83CA441735CF}|ProblemAssignment3.csproj|solutionrelative:controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 304,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Invoices.cshtml",
+              "DocumentMoniker": "D:\\Subjects\\Sem 2\\Asp.net\\Assignments\\ProblemAssignment_3\\ProblemAssignment_3\\ProblemAssignment3\\Views\\Customers\\Invoices.cshtml",
+              "RelativeDocumentMoniker": "Views\\Customers\\Invoices.cshtml",
+              "ToolTip": "D:\\Subjects\\Sem 2\\Asp.net\\Assignments\\ProblemAssignment_3\\ProblemAssignment_3\\ProblemAssignment3\\Views\\Customers\\Invoices.cshtml*",
+              "RelativeToolTip": "Views\\Customers\\Invoices.cshtml*",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADMAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T23:16:59.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "D:\\Subjects\\Sem 2\\Asp.net\\Assignments\\ProblemAssignment_3\\ProblemAssignment_3\\ProblemAssignment3\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomersController.cs",
+              "ToolTip": "D:\\Subjects\\Sem 2\\Asp.net\\Assignments\\ProblemAssignment_3\\ProblemAssignment_3\\ProblemAssignment3\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "Controllers\\CustomersController.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAkwFoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T22:47:42.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddCustomer.cshtml",
+              "DocumentMoniker": "D:\\Subjects\\Sem 2\\Asp.net\\Assignments\\ProblemAssignment_3\\ProblemAssignment_3\\ProblemAssignment3\\Views\\Customers\\AddCustomer.cshtml",
+              "RelativeDocumentMoniker": "Views\\Customers\\AddCustomer.cshtml",
+              "ToolTip": "D:\\Subjects\\Sem 2\\Asp.net\\Assignments\\ProblemAssignment_3\\ProblemAssignment_3\\ProblemAssignment3\\Views\\Customers\\AddCustomer.cshtml",
+              "RelativeToolTip": "Views\\Customers\\AddCustomer.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T22:42:50.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerForm.cshtml",
+              "DocumentMoniker": "D:\\Subjects\\Sem 2\\Asp.net\\Assignments\\ProblemAssignment_3\\ProblemAssignment_3\\ProblemAssignment3\\Views\\Customers\\CustomerForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\Customers\\CustomerForm.cshtml",
+              "ToolTip": "D:\\Subjects\\Sem 2\\Asp.net\\Assignments\\ProblemAssignment_3\\ProblemAssignment_3\\ProblemAssignment3\\Views\\Customers\\CustomerForm.cshtml",
+              "RelativeToolTip": "Views\\Customers\\CustomerForm.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T22:43:36.158Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
